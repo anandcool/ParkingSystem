@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@drawable/shadow_background">
+    <ImageView
+        android:id="@+id/forgot_pass"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_otp"/>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/otp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgot_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:hint="Enter the OTP"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColorHint="@color/color_pink"
+        android:textColor="@color/color_blue"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/lobster"
+        android:layout_gravity="center"/>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/confirmotp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:hint="Enter the Confirm OTP"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColorHint="@color/color_pink"
+        android:textColor="@color/color_blue"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/lobster"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/confirmotpbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/shape_login_button"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_below="@id/confirmotp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"
+        android:fontFamily="@font/lobster"/>
+
+</RelativeLayout>

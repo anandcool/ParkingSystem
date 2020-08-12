@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:background="@drawable/customdialogbackground">
+    <ImageView
+        android:id="@+id/forgot_pass"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/logout"/>
+
+    <TextView
+        android:text="Are You Sure want to Logout"
+        android:id="@+id/description"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgot_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:hint="Enter the Phone Number"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/description"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/dialogcustombtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="yes"
+            android:background="@drawable/shape_login_button"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="22dp"/>
+        <Button
+            android:id="@+id/dialogcustombtn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="cancel"
+            android:background="@drawable/shape_login_button"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="22dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

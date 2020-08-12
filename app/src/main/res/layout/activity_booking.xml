@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    android:background="@color/color_voilet"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10px">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Booking Form"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/color_pink"
+                android:fontFamily="@font/lobster"/>
+
+            <EditText
+                android:id="@+id/companyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Vehicle Company Name"
+                android:padding="12dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_pink"
+                android:textColor="@color/color_blue"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lobster"/>
+            <EditText
+                android:id="@+id/license"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your License Plate Number"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_pink"
+                android:padding="12dp"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_blue"
+                android:fontFamily="@font/lobster"/>
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_pink"
+                android:hint="Enter Your Contat Number"
+                android:padding="12dp"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_blue"
+                android:fontFamily="@font/lobster"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:id="@+id/category"
+                android:textColor="@color/color_blue"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:entries="@array/category"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:id="@+id/timing"
+                android:textColor="@color/color_blue"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:entries="@array/timing"/>
+
+            <Button
+                android:id="@+id/btnsubmit"
+                android:text="Proceed to Next"
+                android:background="@drawable/shape_login_button"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/lobster"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

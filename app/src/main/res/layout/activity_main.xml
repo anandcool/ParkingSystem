@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:ignore="InvalidId,MissingConstraints">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_parking"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="220dp"
+        android:layout_height="480dp"
+        android:background="@drawable/shape_left_panel"
+        app:layout_constraintTop_toBottomOf="@id/rlHeader"
+        tools:ignore="MissingConstraints" >
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/llLoginPanel"
+        app:layout_constraintTop_toBottomOf="@id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/shadow_background"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/email"
+            android:hint="Email"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lobster"/>
+        <EditText
+            android:id="@+id/pass"
+            android:hint="Password"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lobster"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/llLoginPanel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Login"
+        android:fontFamily="@font/lobster"
+        android:textSize="20sp"
+        android:background="@drawable/shape_login_button"
+        android:textColor="@android:color/white"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

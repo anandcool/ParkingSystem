@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3d93d9</color>
+    <color name="colorPrimaryDark">#00754B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="color_pink">#cf4bf8</color>
+    <color name="color_voilet">#8813e4</color>
+    <color name="color_blue">#3d93d9</color>
+    <color name="color_green_light">#5ff0f7</color>
+    <color name="color_white">#fff</color>
+    <color name="cardview_color1">#fc7f03</color>
+</resources>

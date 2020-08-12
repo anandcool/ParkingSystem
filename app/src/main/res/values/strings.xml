@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ParkingSystem</string>
+    <string name="title_activity_dashboard">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Settings</string>
+    <string-array name="faculty">
+        <item>Chose a Faculty</item>
+        <item>Anil Sir</item>
+        <item>Sajjan Sir</item>
+        <item>Manish Sir</item>
+        <item>Vikrant Sir</item>
+        <item>Sanjeev Sir</item>
+    </string-array>
+    <string-array name="category">
+        <item>Chose a Category</item>
+        <item>Bike</item>
+        <item>Bicycle</item>
+        <item>Car</item>
+    </string-array>
+    <string-array name="timing">
+        <item>Chose a Timing</item>
+        <item>3-4pm</item>
+        <item>4-5pm</item>
+        <item>5-6pm</item>
+        <item>6-7pm</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
